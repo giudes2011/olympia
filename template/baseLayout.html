@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/articlePage.css">
+    <link rel="stylesheet" href="/static/baseh1.css">
+    <title>Olympia</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1><a href="{% url 'list' %}"><img src="/static/logo.png" style="border-radius: 1rem;"/></a></h1>
+        <nav>
+            <ul>
+                {% if user.is_authenticated %}
+                <li>
+                    <form action="{% url 'logout' %}" class="logout-link" method="post">
+                        {% csrf_token %}
+                        <button type="submit" class="logout-button">Logout User</button>
+                    </form>
+                    <li><a href="{% url 'create' %}" class="highlight">Make a post!</a></li>
+                </li>
+                {% else %}
+                    <li><a href="{% url 'login' %}" class="a1stchild">Login</a></li
+                    <li><a href="{% url 'signup' %}" class="a2ndchild">Signup</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

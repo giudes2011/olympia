@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-items: center;
+    background-color: aquamarine;
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url(/static/back.png);
+    background-size: cover;
+    background-attachment: scroll;
+}
+.articles {
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+.article-detail {
+    background-color: rgba(46, 179, 184, 0.5);
+    justify-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+    color: #fff;
+    margin: 0;
+}
+a, a:hover, a:visited {
+    color: rgb(178, 158, 218);
+    text-decoration: none;
+}
+.wrapper {
+    margin: 0 auto;
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 0;
+}
+nav {
+    justify-self: end;
+}
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+nav button {
+    background: none;
+    color: #fff;
+}
+.helptext, .helptext ul {
+    margin: 0 auto 20px;
+    color: #fff;
+    font-size: 0.9em;
+    display: block;
+}
+.site-form label {
+    color: #fff;
+}
+.errorlist li {
+    padding: 10px;
+    border: 10px solid #ff5722;
+    list-style-type: none;
+    color: #ff5722;
+    margin: 10px 0;
+}
+.wrapper nav ul li a {
+    border: 5px solid rgb(255, 255, 255);
+    display: grid;
+    background: rgb(101, 81, 140);
+    border-radius: 3px;
+}
+.article-detail .article {
+    color: #fff;
+}
+.article-detail .article h2 {
+    font-weight: bold;
+}
+.article-detail .article h3 {
+    border: 3px solid rgb(126, 61, 61);
+    background: rgb(99, 11, 11);
+    border-radius: 3px;
+}
+.signupH1 {
+    color: #fff;
+    padding-bottom: 30px auto;
+}
+.a1stchild{
+    border: 5px solid rgb(255, 255, 255);
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    background: rgb(101, 81, 140);
+    border-radius: 3px;
+}
+.a2ndchild {
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    border: 5px solid rgb(255, 255, 255);
+    background: rgb(101, 81, 140);
+    border-radius: 3px;
+}
+.articles .article p {
+    color: #fff;
+}
+.articles .article {
+    padding: 10px;
+    border: 3px solid #00dba0;
+    background-color: rgba(46, 179, 184, 0.5);
+    position: relative;
+    padding-bottom: 40px;
+}
+.loginH1 {
+    color: #fff;
+}
+.logout-link {
+    border: 5px solid rgb(255, 255, 255);
+    display: grid;
+    background: rgb(101, 81, 140);
+    border-radius: 3px;
+    font-family: 'Ubuntu' sans-serif;
+}
+.logout-button:hover {
+    cursor: pointer;
+}
+.userUpload {
+    border: 2px solid #fff;
+    background: rgba(54, 61, 61, 0.5);
+}
+.site-form input, .site-form textarea {
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 10px;
+}
+.site-form {
+    border: 5px solid #84dba8;
+    background: rgb(79 162 137 / 70%);
+    border-radius: 12px;
+}
